@@ -1,0 +1,3 @@
+define(['aside'], function(undefined) {
+	
+});
