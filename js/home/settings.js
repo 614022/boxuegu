@@ -16,22 +16,19 @@ define(['jquery', 'common', 'header', 'aside', 'nprogress', 'loading', 'template
 				endDate: new Date(),
 				format: 'yyyy-mm-dd'
 			});
-			
+
 			// 初始化富文本编辑器
 			edit = ckeditor.replace('ckeditor', {
 				toolbarGroups: [
 					{ name: 'styles' }
 				]
 			});
-			
+
 			// 初始化省市三级联动插件
 			$('#region').region({
 				url: '/lib/jquery-region/region.json'
 			});
-			
-			/**
-			 * 
-			 * */
+
 			// 初始化文件上传插件
 			$('#upfile').uploadify({
 				swf: '/lib/uploadify/uploadify.swf',
